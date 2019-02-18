@@ -1,0 +1,24 @@
+## General
+.cvs
+.htaccess
+.svn
+*.bak
+*.log
+*.swp
+*.sublime-*
+.idea
+
+## Windows
+Desktop.ini
+Thumbs.db
+
+## Mac
+.DS_Store
+
+## Development
+.sass-cache
+bower
+bower_components
+node_modules
+dist
+

@@ -1,0 +1,18 @@
+include ../_mixins.pug
+
+section.video-area
+    .container
+        .row
+            .col-lg-6.offset-lg-3.col-md-8.offset-md-2
+                +content_page("Product Demo",
+                "Watch A Quick Demo",
+                "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.").text-center
+        .row
+            .col-lg-10.offset-lg-1
+                .video-box
+                    .video-content.text-center
+                        .video-overplay
+                        a.popup-video(href="#")
+                            i.icofont-ui-play
+
+

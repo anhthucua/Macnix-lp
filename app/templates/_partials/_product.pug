@@ -1,0 +1,22 @@
+include ../_mixins.pug
+//- start product
+section.product-area
+    .container
+        .row
+            .col-lg-6.offset-lg-3.col-md-8.offset-md-2
+                +content_page('Product',
+                'Our Latest Product',
+                'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.').text-center
+        .row
+            .col-lg-3.col-md-6
+                +product_single("../../images", "watch-1", "png" , "Rexpo Black","#","ribbon","20% off", "$60.00", "$79.00")
+            .col-lg-3.col-md-6
+                +product_single("../../images", "watch-2", "png" , "Rexpo Red","#",null,null, "$69.00", null)
+            .col-lg-3.col-md-6
+                +product_single("../../images", "watch-3", "png" , "Rexpo White","#","ribbon","25% off", "$55.00", "$85.00")
+            .col-lg-3.col-md-6
+                +product_single("../../images", "watch-1", "png" , "Rexpo Extra","#",null,null, "$59.00", null)
+            .col-12
+                .btn-load-more.text-center
+                    +submit('#','Load More','icofont-repair')  
+//- end product    

@@ -1,0 +1,18 @@
+include ../_mixins.pug
+
+section.core-feat-area
+    .container
+        .row
+            .col-lg-6.offset-lg-3.col-md-8.offset-md-2
+                +content_page("Core Features","Outstanding Features","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.").text-center
+        .row
+            .col-md-4
+                +single("icofont-snapchat","Instant Notification","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, suscipit facere.")
+                +single("icofont-chat","Live User Chat","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, suscipit facere.")
+            .col-md-4
+                .core-feat-img.d-table.text-center
+                    .d-table-cell.align-middle
+                        img.img-fluid(src="../../images/watch-2.png", alt="red watch")
+            .col-md-4
+                +single("icofont-ui-video-message","Live Video Call","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, suscipit facere.").single-right
+                +single("icofont-ui-call","User Instant Call","Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, suscipit facere.").single-right

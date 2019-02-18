@@ -1,0 +1,6 @@
+@mixin el-before($width: 100%, $height: 100%, $content: '') {
+    content: $content;
+    position: absolute;
+    width: $width;
+    height: $height;
+  }

@@ -1,0 +1,17 @@
+include ../_mixins.pug
+
+section.why-choose-area
+    .container
+        .row
+            .col-md-5
+                .why-choose-img.d-table.text-center
+                    .align-middle.d-table-cell
+                        img.img-fluid(src="../../images/watch-1.png", alt="watch")
+            .col-md-7
+                +content_page("","Why Choose The Product?","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.")
+                .why-choose-single.row
+                    +single("icofont-diamond","1 Year Guarantee","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis.").col-md-6.text-center
+                    +single("icofont-truck-loaded","Free Shipping","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis.").col-md-6.text-center
+                .why-choose-single.row
+                    +single("icofont-cart","Free Product Return","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis.").col-md-6.text-center
+                    +single("icofont-support","Dedicated Support","Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis.").col-md-6.text-center

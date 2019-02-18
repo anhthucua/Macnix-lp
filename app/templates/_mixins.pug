@@ -1,0 +1,41 @@
+
+mixin submit(link,btn_submit,icon)
+    a.submit(href=link)&attributes(attributes)
+        i(class=icon)
+        !=btn_submit
+
+mixin content_page(subtitle,title,description)
+    article.content_page&attributes(attributes)
+        h5!=subtitle
+        h2!=title
+        p!=description
+
+mixin about_info_component(title, icon)
+    article.about_info_component&attributes(attributes)
+        .about-info-single
+            i(class!=icon)
+            h6!=title
+
+mixin single(icon,title,subtitle)
+    article.single&attributes(attributes)
+        .icon
+            i(class!=icon)
+        .content
+            h4!=title
+            p!=subtitle
+
+mixin product_single(path, name, type1, nameprod,href,ribbon=null,sale=null, price1, price2=null)
+    .product_single&attributes(attributes)
+        div(class=ribbon)!=sale
+        .prod-img
+            img(src=path + "/" + name + "."+ type1 alt=name)
+        .prod-details
+            h4!=nameprod
+            h5
+                del!=price2
+                span!=price1
+            +submit("#","Buy Now","icofont-ui-card")
+            
+
+    
+

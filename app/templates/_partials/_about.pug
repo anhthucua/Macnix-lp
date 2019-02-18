@@ -1,0 +1,20 @@
+include ../_mixins.pug
+
+section.about-area
+	.container
+		.row
+			.col-lg-6.col-md-7
+				+content_page("About The Watch",
+								"A Watch Can Make Your Life Easy and Comfortable.",
+								"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. <br><br>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis")
+
+				.row.about-info
+					.col-md-4.p-md-1
+						+about_info_component("Attractive", "icofont-layers")
+					+about_info_component("Fashionable","icofont-electron").col-md-4.p-md-1
+					+about_info_component("Modern","icofont-chart-pie-alt").col-md-4.p-md-1
+			.col-lg-6.col-md-5
+				.about-img.text-center.d-table
+					.d-table-cell.align-center
+						img.img-fluid(src="../../images/watch-2.png", alt="watch-2")
+		

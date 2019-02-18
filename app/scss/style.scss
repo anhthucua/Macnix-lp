@@ -1,0 +1,14 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+@import 'vendors/bootstrap/bootstrap.scss';
+@import 'vendors/slick/slick.scss';
+// @import 'vendors/aos/aos';
+
+@import 'common';
+@import 'navigation';
+@import 'components';
+@import 'sections';
+
+@import 'icofont'
